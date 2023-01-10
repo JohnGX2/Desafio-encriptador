@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+
+        <main>
+            <a href="https://www.aluracursos.com/" class="logo" target="_blank"><img id="aluraLogo"src="imagenes/Logo.png" alt="logo de Alura">
+            <div class="inicial"></a>
+                <textarea id="texto" cols="35" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <p class="advertencia">&#128680; Solo letras minusculas y sin acentos</p>
+                <div class="botones">
+                    <button type="button" id="botonEncriptar" >Encriptar</button>
+                    <button type="button" id="botonDesencriptar">Desencriptar</button>
+                </div>
+                
+            </div>          
+            
+            <div class="final">
+                <img class="dibujo"  src="imagenes/Muñeco.png" alt="imagen decorativa de hombre con lupa">
+                <div class="mensajes">
+                    <h1 class="mensajeA">Ningún mensaje fue encontrado</h1>
+                    <h2 class="mensajeB">Ingresa el texto que deseas encriptar o desencriptar</h2>
+                </div>
+                <textarea id="textareaResultado" cols="20" rows="10"></textarea>
+                <button type="button" id="botonCopiar">copiar</button>
+            </div>
+            
+        </main>
+        
+
+        <footer>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/john-goyes/" target="_blank"><img  src="imagenes/linkedin.png" alt="logo de LinkedIn" Id="logoLink"></a>
+                <a Id="logoGit" href="https://github.com/JohnGX2" target="_blank"><img src="imagenes/github.png" alt="logo de GitHub"></a>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script>
+    var botonEncriptar = document.querySelector("#botonEncriptar")
+    var botonDesencriptar = document.querySelector("#botonDesencriptar")
+    var botonCopiar = document.querySelector("#botonCopiar")
+    botonEncriptar.onclick = encriptar;
+    botonDesencriptar.onclick = desencriptar;
+    botonCopiar.onclick = copiar;    
+</script>
